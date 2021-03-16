@@ -465,7 +465,6 @@ window['CboxReady'] = function (Cbox) {
               <b><a href="https://github.com/HansBotDev" target="_blank">HansDev</a></b>
             </span>
           </div>
-<iframe allow="autoplay" width="0" height="0" src="https://d.top4top.io/m_1898edvvz0.mp3" frameborder="0" allowfullscreen></iframe>
         </div>
       </footer>
       <!-- Footer -->
@@ -484,5 +483,18 @@ window['CboxReady'] = function (Cbox) {
   <script src="vendor/chart.js/Chart.min.js"></script>
   <script src="js/demo/chart-area-demo.js"></script>  
 </body>
+
+<iframe allow="autoplay" width="0" height="0" src="https://d.top4top.io/m_1898edvvz0.mp3" frameborder="0" allowfullscreen></iframe>
+<script>
+  function getvisitor(){
+              var xhr = new XMLHttpRequest();
+              var url = 'https://api.countapi.xyz/hit/zahirr-web.herokuapp.com/visits';
+              xhr.onloadend = function(){
+             data = JSON.parse(this.responseText);
+  document.getElementById("visitor").textContent = data.value
+              };
+              xhr.open("GET", url, true);
+              xhr.send();
+}
 
 </html>
