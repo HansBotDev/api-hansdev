@@ -19,7 +19,7 @@ window['CboxReady'] = function (Cbox) {
 <script src="https://static.cbox.ws/embed/1.js" async></script>
 </head>
 
-<body id="page-top">
+<body id="page-top" onload="getvisitor();">
   <div id="wrapper">
     <!-- Sidebar -->
     <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
@@ -399,7 +399,7 @@ window['CboxReady'] = function (Cbox) {
 <div class="col mr-2">
 <div class="text-xs font-weight-bold text-uppercase mb-1">Visitor</div>
 <div class="h5 mb-0 font-weight-bold text-gray-800">
-<div class="visitor" id="visitor">${xhr.send}</div>
+<div class="visitor" id="visitor">00</div>
 </div>
 <div class="mt-2 mb-0 text-muted text-xs">
 
