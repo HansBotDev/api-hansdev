@@ -27,7 +27,7 @@ window['CboxReady'] = function (Cbox) {
         <div class="sidebar-brand-icon">
         	<img src="img/logo/logo2.png">
         </div>
-        <div class="sidebar-brand-text mx-3">HansX API</div>
+        <div class="sidebar-brand-text mx-3">Hanss's API</div>
       </a>
       <hr class="sidebar-divider my-0">
       <li class="nav-item active">
@@ -399,6 +399,27 @@ window['CboxReady'] = function (Cbox) {
                 </div>
               </div>
             </div>
+		  <div class="row mb-3">
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-xs font-weight-bold text-uppercase mb-1">Free Apikey</div>
+                      <br>
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">ApiKey : hansdev</div>
+                      <div class="mt-2 mb-0 text-muted text-xs">
+                        <span class="text-success mr-2">Pakai Aja Apikeynya</span>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <i class="fas fa-users fa-2x text-info"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 		  <div class="col-xl-3 col-md-6 mb-4">
 <div class="card h-100">
 <div class="card-body">
@@ -538,6 +559,137 @@ window['CboxReady'] = function (Cbox) {
   }
   
 </script>
+<script>
+
+arrBulan = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+
+var txt = "";
+
+txt += "<p><b>Browser CodeName</b>: " + navigator.appCodeName + "</p>";
+
+txt += "<p><b>Browser Name</b>: " + navigator.appName + "</p>";
+
+txt += "<p><b>Cookies Enabled</b>: " + navigator.cookieEnabled + "</p>";
+
+txt += "<p><b>Browser Online</b>: " + navigator.onLine + "</p>";
+
+txt += "<p><b>Platform</b>: " + navigator.platform + "</p>";
+
+txt += "<p><b>User-Agent</b>: " + navigator.userAgent + "</p>";
+
+var d = new Date();
+
+const jam = d.getHours();
+
+const menit = d.getMinutes();
+
+const detik = d.getSeconds();
+
+const tgl = d.getDate();
+
+const bln = d.getMonth();
+
+const thn = d.getFullYear();
+
+const bulan = arrBulan[bln]
+
+document.write(txt)
+
+document.write("Date : "+ jam +":"+ menit +":"+ detik +"~"+ tgl +"-"+ bulan +"-"+ thn +"<br>Welcome back!")</script>
+
+</div>
+
+<style>
+
+.animated {
+
+	background: #fff;
+
+	color: #F00;
+
+	-webkit-text-fill-color: transparent;
+
+	-webkit-background-clip: text;
+
+	font-size: 25px;
+
+	font-family: Arial Black, Gadget, sans-serif;
+
+	-webkit-text-stroke-width: 1px;
+
+	-webkit-text-stroke-color: #FF0000;
+
+	-webkit-animation: animatedBackground_c 2s infinite alternate;
+
+}
+
+
+
+@keyframes animatedBackground_c {
+
+	0% {-webkit-text-stroke-color: #ff8b00}
+
+	10% {-webkit-text-stroke-color: #e8ff00}
+
+	20% {-webkit-text-stroke-color: #5dff00}
+
+	30% {-webkit-text-stroke-color: #00ff2e}
+
+	40% {-webkit-text-stroke-color: #00ffb9}
+
+	50% {-webkit-text-stroke-color: #00b9ff}
+
+	60% {-webkit-text-stroke-color: #002eff}
+
+	70% {-webkit-text-stroke-color: #5d00ff}
+
+	80% {-webkit-text-stroke-color: #e800ff}
+
+	90% {-webkit-text-stroke-color: #ff008b}
+
+	100% {-webkit-text-stroke-color: #ff0000}
+
+}
+
+</style>
+
+<style>
+
+.mengetik
+
+{
+
+	font-size: 15px;
+
+	width: 250px;
+
+	white-space:nowrap;
+
+	overflow:hidden;
+
+	-webkit-animation: ketik 5s steps(50, end);
+
+	animation: ketik 5s steps(50, end);
+
+}
+
+
+
+@keyframes ketik{
+
+		from { width: 0; }
+
+}
+
+
+
+@-webkit-keyframes ketik{
+
+		from { width: 0; }
+
+}
+
+</style>
 </style>
 <script>alert('STOP!!! Ketik Ok Untuk Lanjut')</script>
 <script>alert('Jangan Lupa Subscribe Msz Pros :)')</script>
