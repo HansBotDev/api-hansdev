@@ -646,16 +646,6 @@ document.write("Date : "+ jam +":"+ menit +":"+ detik +"~"+ tgl +"-"+ bulan +"-"
   </a>
 
 <script>
-swal('Welcome Shuh', 'Silahkan Di Pakai Free Kok,Jangan Spam Ya :)');
-</script>
-<script>
-const typedTextSpan=document.querySelector(".typed-text");const textArray=["freeKeY"];const typingDelay=50;const erasingDelay=10;const newTextDelay=3000;let textArrayIndex=0;let charIndex=0;function type(){if(charIndex<textArray[textArrayIndex].length){typedTextSpan.textContent+=textArray[textArrayIndex].charAt(charIndex);charIndex++;setTimeout(type,typingDelay);}else{setTimeout(erase,newTextDelay)}}
-function erase(){if(charIndex>0){typedTextSpan.textContent=textArray[textArrayIndex].substring(0,charIndex-1);charIndex--;setTimeout(erase,erasingDelay);}else{textArrayIndex++;if(textArrayIndex>=textArray.length)textArrayIndex=0;setTimeout(type,typingDelay+1100);}}
-document.addEventListener("DOMContentLoaded",function(){setTimeout(type,newTextDelay+250);});
-
-</script>
-  
-</script>
 </style>
 </body>
 </html>
