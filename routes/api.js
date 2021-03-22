@@ -379,6 +379,27 @@ router.get('/randomquote', async (req, res, next) => {
 })
 })
 
+router.get('/randomquoteanime', async (req, res, next) => {
+        var apikeyInput = req.query.apikey
+            
+	if(!apikeyInput) return res.json(loghandler.notparam)
+	if(apikeyInput != 'hansdev') return res.json(loghandler.invalidKey)
+
+       fetch(encodeURI(`https://videfikri.com/api/anime/randomquoteanime`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+             res.json({
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
+
+
 router.get('/ytdown', async (req, res, next) => {
         var apikeyInput = req.query.apikey,
             url = req.query.url
@@ -418,29 +439,6 @@ router.get('/infonpm', async (req, res, next) => {
                  creator : `${creator}`,
                  result,
                  message : `jangan lupa follow ${creator}`
-             })
-         })
-         .catch(e => {
-         	res.json(loghandler.error)
-})
-})
-
-router.get('/simi', async (req, res, next) => {
-var text = req.query.text,
-        var apikeyInput = req.query.apikey;
-        if(!text) return res.json(loghandler.nottext)
-	Text(text)
-            
-	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'hansdev') return res.json(loghandler.invalidKey)
-
-       fetch(encodeURI(`https://leyscoders-api.herokuapp.com/api/simi?kata=${text}&apikey=freeKeY`))
-        .then(response => response.json())
-        .then(data => {
-        var result = data;
-             res.json({
-                 creator : `${creator}`,
-                 result
              })
          })
          .catch(e => {
