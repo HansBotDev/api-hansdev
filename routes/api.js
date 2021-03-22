@@ -425,6 +425,29 @@ router.get('/infonpm', async (req, res, next) => {
 })
 })
 
+router.get('/simi', async (req, res, next) => {
+var text = req.query.text,
+        var apikeyInput = req.query.apikey;
+        if(!text) return res.json(loghandler.nottext)
+	Text(text)
+            
+	if(!apikeyInput) return res.json(loghandler.notparam)
+	if(apikeyInput != 'hansdev') return res.json(loghandler.invalidKey)
+
+       fetch(encodeURI(`https://leyscoders-api.herokuapp.com/api/simi?kata=${text}&apikey=freeKeY`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+             res.json({
+                 creator : `${creator}`,
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
+
 
 router.get('/short/tiny', async (req, res, next) => {
     var apikeyInput = req.query.apikey,
