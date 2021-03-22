@@ -15,7 +15,7 @@
 </p>
 <p align='center'>
    <a href="https://wa.me/6283898698875"><img height="30" src="https://c.top4top.io/p_1837yybbf0.jpeg"></a>&nbsp;&nbsp;
-   <a href="https://instagram.com/zhirr_ajalah"><img height="30" src="https://raw.githubusercontent.com/TobyG74/TobyG74/main/instagram.jpg"></a>
+   <a href="https://instagram.com/mszpros"><img height="30" src="https://raw.githubusercontent.com/TobyG74/TobyG74/main/instagram.jpg"></a>
 </P>
 
 ## 🛠️ My-Api
